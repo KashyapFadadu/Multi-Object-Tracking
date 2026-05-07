@@ -123,6 +123,6 @@ Feel free to fork this repository and submit pull requests!
 
 ---
 
-**Live App**: [https://YOUR_USERNAME-multi-object-tracking.streamlit.app](https://YOUR_USERNAME-multi-object-tracking.streamlit.app)
+**Live App**: [https://KashyapFadadu-multi-object-tracking.streamlit.app](https://KashyapFadadu-multi-object-tracking.streamlit.app)
 
-**GitHub**: [https://github.com/YOUR_USERNAME/Multi-Object-Tracking](https://github.com/YOUR_USERNAME/Multi-Object-Tracking)
+**GitHub**: [https://github.com/KashyapFadadu/Multi-Object-Tracking](https://github.com/KashyapFadadu/Multi-Object-Tracking)
