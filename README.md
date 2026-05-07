@@ -15,7 +15,7 @@ Real-time object detection and tracking using YOLOv5 and Streamlit.
 
 ### Live Demo
 
-Try the live application: [Multi Object Tracking App](https://KashyapFadadu-multi-object-tracking.streamlit.app)
+Try the live application: [Multi Object Tracking App](https://multi-object-tracking.streamlit.app/)
 
 ### Local Installation
 
@@ -102,6 +102,6 @@ Feel free to fork this repository and submit pull requests!
 
 ---
 
-**Live App**: [https://KashyapFadadu-multi-object-tracking.streamlit.app](https://KashyapFadadu-multi-object-tracking.streamlit.app)
+**Live App**: [https://multi-object-tracking.streamlit.app/](https://multi-object-tracking.streamlit.app/)
 
 **GitHub**: [https://github.com/KashyapFadadu/Multi-Object-Tracking](https://github.com/KashyapFadadu/Multi-Object-Tracking)
