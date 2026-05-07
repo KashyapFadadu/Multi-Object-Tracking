@@ -5,3 +5,4 @@ torchvision==0.24.0
 ultralytics
 scipy
 pillow>=11.0.0
+opencv-python-headless
