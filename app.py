@@ -1,7 +1,7 @@
 import streamlit as st
 import cv2
 import numpy as np
-from yolov5 import YOLOv5
+from ultralytics import YOLO
 from centroid_tracker import CentroidTracker
 import tempfile
 import os
@@ -39,14 +39,14 @@ max_disappeared = 50
 
 @st.cache_resource
 def load_model():
-    return YOLOv5('yolov5s.pt')
+    return YOLO('yolov5s.pt')
 
 
 with st.spinner("Loading YOLOv5 model..."):
     model = load_model()
 
 # Get class names and set colors
-class_names = model.model.names
+class_names = model.names if hasattr(model, 'names') else model.model.names
 
 colors = {
     'car': (0, 255, 0),      # Green
@@ -141,9 +141,15 @@ if uploaded_file is not None:
                     break
 
                 # Detect objects
-                model.conf = confidence_threshold  # Set confidence threshold
-                results = model.predict(frame, size=640)
-                detections = results.xyxy[0].cpu().numpy()
+                results = model.predict(source=frame, conf=confidence_threshold, imgsz=640, verbose=False)
+                if len(results) == 0 or len(results[0].boxes) == 0:
+                    detections = np.empty((0, 6))
+                else:
+                    boxes = results[0].boxes
+                    xyxy = boxes.xyxy.cpu().numpy()
+                    confs = boxes.conf.cpu().numpy().reshape(-1, 1)
+                    clss = boxes.cls.cpu().numpy().reshape(-1, 1)
+                    detections = np.hstack((xyxy, confs, clss))
 
                 rects = []
 
