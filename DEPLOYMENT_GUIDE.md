@@ -37,7 +37,7 @@ git init
 git add .
 git commit -m "Initial commit: Multi Object Tracking"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/Multi-Object-Tracking.git
+git remote add origin https://github.com/KashyapFadadu/Multi-Object-Tracking.git
 git push -u origin main
 ```
 
