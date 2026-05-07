@@ -2,6 +2,7 @@ import streamlit as st
 import cv2
 import numpy as np
 from ultralytics import YOLO
+from ultralytics.utils import ops
 from centroid_tracker import CentroidTracker
 import tempfile
 import os
