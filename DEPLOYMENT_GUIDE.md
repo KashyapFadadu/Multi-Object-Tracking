@@ -51,7 +51,7 @@ Your repo should include the files below:
 
 - `app.py` — Main Streamlit application
 - `centroid_tracker.py` — Tracking algorithm
-- `requirements_deploy.txt` — Dependencies for deployment
+- `requirements.txt` — Dependencies for deployment
 - `.streamlit/config.toml` — Streamlit settings
 - `README.md` — Project documentation
 - `DEPLOYMENT_GUIDE.md` — Deployment instructions
@@ -95,7 +95,7 @@ Thumbs.db
 
 ## Step 3: Check Dependencies
 
-Make sure `requirements_deploy.txt` includes the packages needed by your app:
+Make sure `requirements.txt` includes the packages needed by your app:
 
 - `streamlit`
 - `opencv-python-headless`
@@ -146,7 +146,7 @@ Before deploying, test locally:
 cd "f:\Project\Multi Object Tracking"
 python -m venv venv
 venv\Scripts\activate
-pip install -r requirements_deploy.txt
+pip install -r requirements.txt
 python -m streamlit run app.py --logger.level=error
 ```
 
