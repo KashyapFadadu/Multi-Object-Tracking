@@ -29,7 +29,7 @@ python -m venv venv
 venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements_deploy.txt
+pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
@@ -59,10 +59,9 @@ streamlit run app.py
 Multi-Object-Tracking/
 ├── app.py                      # Main Streamlit application
 ├── centroid_tracker.py         # Tracking algorithm
-├── requirements_deploy.txt     # Dependencies
+├── requirements.txt            # Dependencies
 ├── .streamlit/config.toml      # Streamlit configuration
 ├── README.md                   # This file
-├── DEPLOYMENT_GUIDE.md         # Deployment instructions
 ├── .gitignore                  # Files to ignore in Git
 └── yolov5s.pt                  # YOLOv5 weights file
 ```
@@ -74,18 +73,6 @@ Edit `.streamlit/config.toml` to customize:
 - Theme colors
 - Maximum upload size
 - Server settings
-
-## 📝 Deployment
-
-For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
-
-### Quick Deploy to Streamlit Cloud
-
-1. Push code to GitHub (public repository)
-2. Sign up at https://streamlit.io/cloud
-3. Click "Create app"
-4. Select repository and branch
-5. Deployment complete!
 
 ## 📈 Performance Notes
 
@@ -108,14 +95,6 @@ For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE
 - [YOLOv5 Documentation](https://github.com/ultralytics/yolov5)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [OpenCV Documentation](https://docs.opencv.org/)
-
-## 👨‍💻 Author
-
-Created with ❤️ for Computer Vision and Object Tracking
-
-## 📄 License
-
-MIT License - feel free to use this project
 
 ## 🤝 Contributing
 
