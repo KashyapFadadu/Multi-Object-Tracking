@@ -13,10 +13,6 @@ Real-time object detection and tracking using YOLOv5 and Streamlit.
 
 ## 🚀 Quick Start
 
-### Live Demo
-
-Try the live application: [Multi Object Tracking App](https://multi-object-tracking.streamlit.app/)
-
 ### Local Installation
 
 ```bash
